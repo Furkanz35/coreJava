@@ -2,6 +2,7 @@ package com.furkan.zengin.corejava.collections.util;
 
 import java.io.ObjectStreamException;
 import java.util.*;
+import com.furkan.zengin.corejava.collections.list.GetListComparator;
 
 public class CollectionUtil {
 
@@ -61,4 +62,18 @@ public class CollectionUtil {
         System.out.println("-------------------------");
 
     }
+
+    public static List getList() {
+        List list = new ArrayList<>();
+        list.add("Furkan");
+        list.add("C");
+        list.add("Java");
+        list.add(24);
+        list.add(1998);
+        list.add(true);
+        list.add(new Date());
+        return list;
+    }
+
+
 }
